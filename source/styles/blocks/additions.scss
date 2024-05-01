@@ -7,7 +7,7 @@
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
-  color: #222222;
+  color: var(--catalog-text-color, #222222);
 }
 
 .additions__list {

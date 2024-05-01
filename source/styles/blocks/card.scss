@@ -11,7 +11,7 @@
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
-  color: #222222;
+  color: var(--catalog-text-color, #222222);
 }
 
 .card__info {

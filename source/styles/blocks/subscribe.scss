@@ -14,7 +14,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #000000;
+  color: var(--secondary-text-color, #000000);
 }
 
 .subscribe__form {
