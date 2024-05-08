@@ -11,7 +11,8 @@
 }
 
 .footer__address-container {
-  //
+  display: flex;
+  padding: 26px 20px;
 }
 
 .footer__address-map {
@@ -23,17 +24,47 @@
 }
 
 .footer__container {
-  //
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
 }
 
 .footer__container-logo {
-  //
+  max-width: 128px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer__container-logo::after {
+  content: "";
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: -75px;
 }
 
 .footer__socials {
-  //
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer__socials::after {
+  content: "";
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: -75px;
 }
 
 .footer__developer {
-  //
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
 }
