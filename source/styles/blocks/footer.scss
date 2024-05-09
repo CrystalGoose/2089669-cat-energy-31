@@ -10,6 +10,10 @@
   //
 }
 
+.footer-address--catalog {
+  background-color: var(--background-basic, #f2f2f2);
+}
+
 .footer__address-container {
   display: flex;
   padding: 26px 20px;
@@ -20,7 +24,7 @@
 }
 
 .footer__map-picture {
-  //
+  display: block;
 }
 
 .footer__container {
@@ -37,20 +41,20 @@
   position: relative;
 }
 
-.footer__container-logo::after {
+.footer__socials {
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer__socials::before {
   content: "";
   background-color: #d9d9d9;
   width: 280px;
   height: 1px;
   display: inline-block;
   position: absolute;
-  bottom: -20px;
+  top: -20px;
   left: -75px;
-}
-
-.footer__socials {
-  margin: 0 auto;
-  position: relative;
 }
 
 .footer__socials::after {
