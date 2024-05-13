@@ -15,6 +15,13 @@
   border-radius: 2px;
   border-style: none;
   left: 50%;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__button {
+    height: 100%;
+  }
 }
 
 .slider__button::before {
@@ -40,4 +47,11 @@
 
 .slider__cat--slim {
   //
+}
+
+@media (min-width: $tablet-width) {
+  .slider__cat--slim {
+    position: absolute;
+    left: 0;
+  }
 }

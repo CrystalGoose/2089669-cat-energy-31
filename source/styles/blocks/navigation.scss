@@ -2,20 +2,20 @@
   //
 }
 
-.navigation__button-toggle {
-  border-style: none;
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/stack.svg#icon_menu");
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .navigation__list {
   list-style: none;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: center;
+    margin-left: auto;
+    gap: 33px;
+  }
 }
 
 .navigation__item {
@@ -27,10 +27,16 @@
 }
 
 .navigation__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $second-font;
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--secondary-text-color, #000000);
 }
+
+// @media (min-width: $tablet-width) {
+//   .navigation__link {
+//     padding:
+//   }
+// }

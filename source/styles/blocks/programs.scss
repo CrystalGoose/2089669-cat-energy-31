@@ -8,11 +8,23 @@
   padding: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__list {
+    padding: 30px;
+  }
+}
+
 .programs__item--slim {
   padding: 30px 20px 18px;
   background-color: var(--background-basic, #f2f2f2);
   margin-bottom: 20px;
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item--slim {
+    padding: 77px 53px 53px;
+  }
 }
 
 .programs__item--slim::before {
@@ -23,6 +35,17 @@
   height: 50px;
   border-radius: 50%;
   top: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item--slim::before {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 445px;
+  }
 }
 
 .programs__item--slim::after {
@@ -38,10 +61,32 @@
   left: 27px;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__item--slim::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    height: 194px;
+    background-image: url("../../icons/stack.svg#icon_cat-slim");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 475px;
+  }
+}
+
 .programs__item--pro {
   padding: 30px 20px 18px;
   background-color: var(--background-basic, #f2f2f2);
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item--pro {
+    padding: 77px 53px 53px;
+  }
 }
 
 .programs__item--pro::before {
@@ -52,6 +97,17 @@
   height: 50px;
   border-radius: 50%;
   top: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item--pro::before {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 445px;
+  }
 }
 
 .programs__item--pro::after {
@@ -67,8 +123,18 @@
   left: 13px;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__item--pro::after {
+    width: 268px;
+    height: 112px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 405px;
+  }
+}
+
 .programs__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $second-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
@@ -77,10 +143,25 @@
   margin: 0 0 29px 70px;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__title {
+    margin-left: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
 .programs__description {
   margin: 0 0 38px;
   padding-right: 13px;
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__description {
+    width: 340px;
+  }
 }
 
 .programs__description::after {
@@ -95,7 +176,7 @@
 }
 
 .programs__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $second-font;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
