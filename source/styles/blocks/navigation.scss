@@ -2,24 +2,30 @@
   //
 }
 
+
 .navigation__list {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-}
+  text-align: center;
 
-@media (min-width: $tablet-width) {
-  .navigation__list {
+  @media (min-width: $tablet-width) {
     display: inline-flex;
-    flex-grow: 1;
+    flex-wrap: wrap;
     align-items: center;
+    justify-items: end;
     margin-left: auto;
     gap: 33px;
   }
 }
 
+
 .navigation__item {
-  //
+  padding: 22px 20px 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .navigation__item--current {
@@ -33,10 +39,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--secondary-text-color, #000000);
-}
 
-// @media (min-width: $tablet-width) {
-//   .navigation__link {
-//     padding:
-//   }
-// }
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}

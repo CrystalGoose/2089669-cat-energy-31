@@ -46,12 +46,6 @@
 }
 
 .slider__cat--slim {
-  //
-}
-
-@media (min-width: $tablet-width) {
-  .slider__cat--slim {
-    position: absolute;
-    left: 0;
-  }
+  position: absolute;
+  left: 0;
 }
