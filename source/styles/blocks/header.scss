@@ -17,7 +17,7 @@
     padding: 55px 110px;
     column-gap: 13px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 
     &::before {
       content: "";
@@ -29,6 +29,14 @@
       top: 0;
       right: 0;
       z-index: -1;
+    }
+  }
+}
+
+.header--catalog {
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: none;
     }
   }
 }
@@ -48,8 +56,7 @@
 
 .header__navigation {
   grid-column: 1 / -1;
-  align-self: center;
-  justify-self: center;
+  place-self: center;
 }
 
 .header__button-toggle {

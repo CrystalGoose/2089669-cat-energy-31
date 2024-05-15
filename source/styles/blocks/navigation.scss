@@ -12,8 +12,7 @@
   @media (min-width: $tablet-width) {
     display: inline-flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-items: end;
+    place-items: center end;
     margin-left: auto;
     gap: 33px;
   }
@@ -42,5 +41,11 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+  }
+}
+
+.navigation__list--catalog a {
+  @media (min-width: $desktop-width) {
+    color: var(--secondary-text-color, #000000);
   }
 }

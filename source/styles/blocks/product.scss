@@ -21,6 +21,7 @@
     background: none;
     max-height: none;
     margin-bottom: 0;
+    position: relative;
   }
 }
 
@@ -66,4 +67,10 @@
 
 .product__button {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 410px;
+    left: 120px;
+  }
 }
