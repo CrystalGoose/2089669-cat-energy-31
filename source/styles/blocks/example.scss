@@ -118,9 +118,8 @@
     grid-row: 4/5;
     margin: 0;
     flex-direction: row;
-    justify-items: center;
     justify-content: space-around;
-    align-items: center;
+    place-items: center;
   }
 }
 

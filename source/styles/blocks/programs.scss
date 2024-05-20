@@ -12,8 +12,7 @@
   @media (min-width: $tablet-width) {
     padding: 30px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
   }
 
   @media (min-width: $desktop-width) {
