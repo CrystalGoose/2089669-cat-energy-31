@@ -9,6 +9,15 @@
   border-style: none;
   padding: 10px 20px;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--accent-hover, #5eaa2f);
+  }
+
+  &:active {
+    background-color: var(--accent-hover, #5eaa2f);
+    color: rgb(255 255 255 / 0.3);
+  }
 }
 
 .button--secondary {
@@ -17,4 +26,13 @@
   padding: 10px 20px;
   height: 40px;
   width: 100%;
+
+  &:hover {
+    background-color: var(--basic-hover, #ebebeb);
+  }
+
+  &:active {
+    background-color: var(--basic-hover, #ebebeb);
+    color: rgb(0 0 0 / 0.3);
+  }
 }
