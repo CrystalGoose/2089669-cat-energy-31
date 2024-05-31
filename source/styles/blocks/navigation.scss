@@ -2,7 +2,7 @@
   //
 }
 
-.navigation--closed .navigation__button-toggle {
+.navigation__toggle {
   border-style: none;
   position: absolute;
   top: 0;
@@ -30,41 +30,14 @@
   }
 }
 
-.navigation--opened .navigation__button-toggle {
-  border-style: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 23px 20px 25px;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    mask-image: url("../../icons/stack.svg#icon_menu-close");
-    background-color: var(--secondary-text-color, #000000);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-}
-
-.navigation__button-toggle:hover::before {
+.navigation__toggle:hover::before {
   opacity: 0.6;
 }
 
-.navigation__button-toggle:active::before {
+.navigation__toggle:active::before {
   opacity: 0.3;
 }
+
 
 .navigation__list {
   list-style: none;
@@ -87,12 +60,48 @@
   }
 }
 
-// .navigation__list--closed {
-//   @media (width < $tablet-width) {
-//     display: none;
-//   }
-// }
+@media (max-width: $tablet-width) {
+  .navigation--opened .navigation__list {
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+  }
 
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__list {
+    display: block;
+  }
+
+  .navigation--closed .navigation__toggle--closed {
+    border-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 23px 20px 25px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      mask-image: url("../../icons/stack.svg#icon_menu-close");
+      background-color: var(--secondary-text-color, #000000);
+      mask-repeat: no-repeat;
+      mask-position: center;
+      cursor: pointer;
+    }
+  }
+}
 
 .navigation__item {
   padding: 22px 20px;
