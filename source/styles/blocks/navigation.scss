@@ -7,37 +7,18 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: 23px 20px 25px;
+  margin: 21px 20px;
   padding: 0;
   width: 24px;
   height: 24px;
   background-color: transparent;
+  background-image: url("../../icons/stack.svg#icon_menu");
+  cursor: pointer;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    mask-image: url("../../icons/stack.svg#icon_menu");
-    background-color: var(--secondary-text-color, #000000);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
-
-.navigation__toggle:hover::before {
-  opacity: 0.6;
-}
-
-.navigation__toggle:active::before {
-  opacity: 0.3;
-}
-
 
 .navigation__list {
   list-style: none;
@@ -61,6 +42,14 @@
 }
 
 @media (max-width: $tablet-width) {
+  .navigation--opened {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    display: block;
+  }
+
   .navigation--opened .navigation__list {
     display: block;
     list-style: none;
@@ -68,6 +57,10 @@
     padding: 0;
     text-align: center;
     background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
   }
 
   .navigation--closed .navigation__list {
@@ -78,33 +71,24 @@
     display: block;
   }
 
-  .navigation--closed .navigation__toggle--closed {
+  .navigation--opened .navigation__toggle {
     border-style: none;
     position: absolute;
-    top: 0;
+    top: -70px;
+    z-index: 2;
     right: 0;
-    margin: 23px 20px 25px;
+    margin: 22px 20px;
     padding: 0;
     width: 24px;
     height: 24px;
     background-color: transparent;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 24px;
-      height: 24px;
-      mask-image: url("../../icons/stack.svg#icon_menu-close");
-      background-color: var(--secondary-text-color, #000000);
-      mask-repeat: no-repeat;
-      mask-position: center;
-      cursor: pointer;
-    }
+    background-image: url("../../icons/stack.svg#icon_menu-close");
+    cursor: pointer;
   }
 }
 
 .navigation__item {
-  padding: 22px 20px;
+  padding: 21px 20px 22px;
   box-shadow: 0 1px #e6e6e6;
 
   &:nth-child(1) {
@@ -140,7 +124,6 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--secondary-text-color, #000000);
-  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

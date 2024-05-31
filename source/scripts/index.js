@@ -5,7 +5,7 @@ const navToggle = document.querySelector('.navigation__toggle');
 navigation.classList.remove('navigation--nojs');
 navigation.classList.add('navigation--closed');
 
-navToggle.addEventListener('click', () => {
+navToggle.onclick = function() {
   if (navigation.classList.contains('navigation--closed')) {
     navigation.classList.remove('navigation--closed');
     navigation.classList.add('navigation--opened');
@@ -15,4 +15,4 @@ navToggle.addEventListener('click', () => {
     navigation.classList.remove('navigation--opened');
   }
   console.log('Current classes:', navigation.className);
-});
+};

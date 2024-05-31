@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -41,7 +42,6 @@
   margin: 0 auto;
   align-items: center;
   padding: 13px 20px 15px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: inline-flex;
