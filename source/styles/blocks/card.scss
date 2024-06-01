@@ -34,18 +34,19 @@
   @media (min-width: $tablet-width) {
     align-self: end;
     width: 324px;
-    height: 429px;
+    min-height: 429px;
     box-shadow: 0 0 2px #e6e6e6;
     flex-direction: row;
-    padding: 25px 37px 40px;
+    padding: 50px 37px 40px;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    box-shadow: 0 0 2px #e6e6e6;
-    height: 431px;
     align-self: end;
+    box-shadow: 0 0 2px #e6e6e6;
+    min-height: 431px;
+    padding: 50px 37px 40px;
   }
 }
 

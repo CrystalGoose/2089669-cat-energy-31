@@ -14,5 +14,4 @@ navToggle.onclick = function() {
     navigation.classList.add('navigation--closed');
     navigation.classList.remove('navigation--opened');
   }
-  console.log('Current classes:', navigation.className);
 };
