@@ -14,7 +14,8 @@
     background-color: var(--accent-hover, #5eaa2f);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: var(--accent-hover, #5eaa2f);
     color: rgb(255 255 255 / 0.3);
   }
@@ -30,7 +31,8 @@
     background-color: var(--basic-hover, #ebebeb);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: var(--basic-hover, #ebebeb);
     color: rgb(0 0 0 / 0.3);
   }

@@ -11,7 +11,8 @@
   position: relative;
   margin: auto 0;
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
   }
 }
@@ -35,7 +36,8 @@
     position: absolute;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     background-color: var(--accent-color, #68b738);
   }
 

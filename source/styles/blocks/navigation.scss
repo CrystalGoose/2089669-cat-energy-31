@@ -91,18 +91,6 @@
   padding: 21px 20px 22px;
   box-shadow: 0 -1px #e6e6e6;
 
-  // &:nth-child(1) {
-  //   box-shadow: 0 0 0 1px #e6e6e6;
-  // }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 0;
     box-shadow: none;
@@ -136,6 +124,15 @@
     font-size: 20px;
     color: var(--accent-light, #ffffff);
     padding: 24px 0 9px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

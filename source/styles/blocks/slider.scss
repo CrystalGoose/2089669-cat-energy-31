@@ -46,7 +46,8 @@
     grid-row: 1;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--accent-hover, #5eaa2f);
   }
 
@@ -103,7 +104,8 @@
     transform: translate(-50%, -50%);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color, #68b738);
   }
 
@@ -111,7 +113,8 @@
     background-color: rgba(94, 170, 47, 0.6);
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border: 3px solid var(--accent-color, #68b738);
   }
 
@@ -120,7 +123,8 @@
     opacity: 0.6;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-color: var(--accent-color, #68b738);
   }
 
