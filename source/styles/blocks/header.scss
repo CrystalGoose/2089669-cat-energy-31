@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     column-gap: 13px;
-    padding: 25px 30px 65px;
+    padding: 25px 30px 63px;
     max-width: 1280px;
   }
 
@@ -36,17 +36,17 @@
 }
 
 .header__wrapper-logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   margin: 0 auto;
   align-items: center;
   padding: 13px 20px 15px;
 
   @media (min-width: $tablet-width) {
+    width: initial;
     display: inline-flex;
     column-gap: 13px;
     padding: 0;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +71,9 @@
 }
 
 .header__logo-image {
-  justify-self: start;
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+  align-items: center;
   height: 38px;
 
   &:hover {
@@ -83,11 +85,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 59px;
+    display: flex;
+    column-gap: 13px;
+    height: auto;
   }
 }
 

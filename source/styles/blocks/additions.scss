@@ -171,7 +171,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: -2/-1;
-    height: 40px;
+    height: auto;
     margin: 0;
   }
 }

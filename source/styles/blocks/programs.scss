@@ -26,14 +26,16 @@
 }
 
 .programs__item {
-  padding: 30px 20px 18px;
+  padding: 30px 20px 21px;
   margin-bottom: 20px;
   position: relative;
   background-color: var(--background-basic, #f2f2f2);
 
   @media (min-width: $tablet-width) {
-    padding: 77px 53px 59px;
+    padding: 75px 53px 58px;
     margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 260px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,8 +59,8 @@
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
-      top: 92px;
-      left: 445px;
+      top: 90px;
+      right: 63px;
     }
 
     @media (min-width: $desktop-width) {
@@ -85,8 +87,9 @@
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
-      top: 81px;
-      left: 475px;
+      top: 80px;
+      right: 93px;
+      left: initial;
     }
 
     @media (min-width: $desktop-width) {
@@ -112,8 +115,8 @@
       width: 200px;
       height: 200px;
       position: absolute;
-      top: 92px;
-      left: 445px;
+      top: 91px;
+      right: 63px;
     }
 
     @media (min-width: $desktop-width) {
@@ -140,8 +143,9 @@
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
-      top: 136px;
-      left: 411px;
+      top: 135px;
+      right: 29px;
+      left: initial;
     }
 
     @media (min-width: $desktop-width) {
@@ -166,6 +170,7 @@
     margin: 0 0 25px;
     font-size: 36px;
     line-height: 1;
+    grid-column: 1/2;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,9 +188,9 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    width: 340px;
-    margin: 0 0 57px;
+    margin: 0 0 50px;
     padding: 0;
+    grid-column: 1/2;
   }
 
   @media (min-width: $desktop-width) {
@@ -219,26 +224,28 @@
   text-decoration: none;
   color: var(--secondary-text-color, #000000);
   position: relative;
+  display: flex;
+  gap: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
+    gap: 25px;
+    grid-column: 1/2;
+    padding: 5px 0;
   }
 
   &::after {
     content: "";
-    position: absolute;
-    display: inline-block;
-    width: 24px;
-    height: 12px;
-    mask-image: url("../../icons/stack.svg#icon_arrow");
-    background-color: var(--secondary-text-color, #000000);
-    top: 5px;
-    right: -40px;
-
-    @media (min-width: $tablet-width) {
-      right: -49px;
-      top: 9px;
-    }
+    display: block;
+    width: 32px;
+    height: auto;
+    background-image: url("../../icons/stack.svg#icon_arrow-hover");
+    background-repeat: no-repeat;
+    background-position-x: -8px;
   }
+}
+
+.programs__link:hover::after {
+  background-position-x: 0;
 }
