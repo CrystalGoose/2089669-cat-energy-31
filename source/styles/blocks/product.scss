@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     width: calc(100% - 60px);
     margin: 0 auto;
+    padding: 65px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +18,7 @@
     justify-content: center;
     width: 1220px;
     margin: 0 auto;
+    padding: 0;
 
     &::before {
       content: "";
@@ -28,7 +30,7 @@
         url("../../images/hero_background-desktop@2x.webp") type("image/webp") 2x,
         url("../../images/hero_background-desktop@1x.jpg") type("image/jpg") 1x,
         url("../../images/hero_background-desktop@2x.jpg") type("image/jpg") 2x),
-        linear-gradient(#545358, #404145);
+        linear-gradient(to right, #4f5055, #3f3e43);
       background-position: 0% 100%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -59,7 +61,7 @@
       url("../../images/hero_background-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/hero_background-mobile@1x.jpg") type("image/jpg") 1x,
       url("../../images/hero_background-mobile@2x.jpg") type("image/jpg") 2x),
-      linear-gradient(#545358, #404145);
+      linear-gradient(to right, #4f5055, #3f3e43);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 100% auto, contain;
@@ -83,11 +85,11 @@
     grid-template-rows: 81px auto auto 1fr;
     grid-auto-flow: row;
     align-items: start;
-    padding: 0 0 50px;
+    padding: 30px 0 50px;
   }
 }
 
-.product__hero div {
+.product__wrapper-titles {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
 
@@ -158,6 +160,7 @@
     top: -84px;
     margin-bottom: -84px;
     z-index: -1;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
@@ -170,6 +173,7 @@
     top: 0;
     order: 0;
     object-fit: cover;
+    height: 499px;
   }
 }
 
