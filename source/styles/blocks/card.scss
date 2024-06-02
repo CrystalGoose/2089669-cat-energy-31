@@ -30,6 +30,10 @@
   object-fit: scale-down;
 }
 
+.card__link-title {
+  text-decoration: none;
+}
+
 .card__title {
   font-family: $second-font;
   font-size: 16px;
@@ -141,6 +145,7 @@
 .card-more__title {
   font-family: $second-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   text-transform: uppercase;
   text-align: center;

@@ -19,6 +19,12 @@
     background-color: var(--accent-hover, #5eaa2f);
     color: rgb(255 255 255 / 0.3);
   }
+
+  &:disabled {
+    background-color: #cdcdcd;
+    color: rgb(0 0 0 / 0.3);
+    cursor: default;
+  }
 }
 
 .button--secondary {
@@ -35,5 +41,11 @@
   &:focus {
     background-color: var(--basic-hover, #ebebeb);
     color: rgb(0 0 0 / 0.3);
+  }
+
+  &:disabled {
+    background-color: #cdcdcd;
+    color: rgb(0 0 0 / 0.3);
+    cursor: default;
   }
 }
